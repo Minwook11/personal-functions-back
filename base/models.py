@@ -11,3 +11,4 @@ class User(models.Model):
     timestamp  = models.DateTimeField(auto_now_add=True)
     is_active  = models.BooleanField(default=False)
     is_admin   = models.BooleanField(default=False)
+    barcode    = models.ImageField(null=True, upload_to="", blank=True)
